@@ -1,0 +1,29 @@
+
+package pratikum_3;
+import java.util.Scanner;
+public class soal_I_2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double ip = 0;
+        String sks;
+        System.out.println("Masukkan IP anda");
+        ip = input.nextDouble();
+        if(ip>=3.5 && ip <= 4){
+            sks = "24";
+        }else if ( ip >= 3 && ip < 3.5 ){
+            sks = "23";
+        }else if ( ip >= 2.75 && ip < 3 ){
+            sks = "22";
+        }else if ( ip >= 2.5 && ip < 2.75){
+        sks = "20";
+        }else if ( ip >= 0 && ip < 2.5){
+            sks = "18";
+            
+        }else{
+        sks = "Sistem Error";
+        }
+         System.out.println(" Jatah SKS anda = " + sks);    
+        }
+        
+    }
+    
